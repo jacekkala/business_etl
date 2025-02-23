@@ -7,7 +7,7 @@ This project demonstrates the design and implementation of a **SQL-based Data Wa
 ![Data Architecture](data_architecture.png)  
 
 ## **Dashboard Preview**  
-![Sales Dashboard](sales_report.png)
+![Sales Dashboard](https://github.com/user-attachments/assets/52936858-8983-495f-9ad5-43dcbd1994da)
 
 ## **Key Features**  
 - **SQL Data Warehouse:** Implemented a **star-schema model** with well-structured fact and dimension tables.  
