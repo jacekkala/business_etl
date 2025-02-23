@@ -4,7 +4,7 @@
 This project demonstrates the design and implementation of a **SQL-based Data Warehouse** with a structured **ETL pipeline**, optimized for sales analytics. The data is processed through **Bronze, Silver, and Gold layers**, ensuring quality and business-ready insights. The final data is analyzed in SQL scripts and visualized in a **Power BI dashboard** for trend analysis and decision-making.
 
 ## **Data Architecture**  
-![Data Architecture](data_architecture.png)  
+![Data Architecture](https://github.com/user-attachments/assets/a599e519-f948-400a-bfb7-b4268fa6381c)
 
 ## **Dashboard Preview**  
 ![Sales Dashboard](https://github.com/user-attachments/assets/52936858-8983-495f-9ad5-43dcbd1994da)
