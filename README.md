@@ -31,9 +31,9 @@ This project demonstrates the design and implementation of a **SQL-based Data Wa
 │   📄 README.md                       # Data catalog for gold layer
 │
 📁 etl_scripts/                        # SQL scripts for ETL and transformations
-│   📁 bronze/                         # Scripts for extracting and loading raw data 🥉
-│   📁 silver/                         # Scripts for cleaning and transforming data 🥈
-│   📁 gold/                           # Scripts for constructing analytical models 🥇
+│   📁 layer_bronze/                   # Scripts for extracting and loading raw data 🥉
+│   📁 layer_silver/                   # Scripts for cleaning and transforming data 🥈
+│   📁 layer_gold/                     # Scripts for constructing analytical models 🥇
 │
 📁 etl_tests/                          # Test scripts and quality files for ETL process
 
