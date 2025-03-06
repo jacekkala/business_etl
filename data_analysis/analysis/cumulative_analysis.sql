@@ -5,11 +5,12 @@ Cumulative Analysis
 Purpose:
     - To calculate running totals or moving averages for key metrics.
     - To track performance over time cumulatively.
-    - Useful for growth analysis or identifying long-term trends.
+    - Useful for growth analysis, progression or identifying long-term trends.
 ===============================================================================
 */
 
 -- Calculate the total sales per month and the running total of sales over time
+-- Change over time BUT CUMULATIVE
 SELECT
 	order_date,
 	total_sales,
