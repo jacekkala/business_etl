@@ -1,9 +1,9 @@
 /*
 ===============================================================================
-Part-to-Whole Analysis
+Part-to-Whole (Proportional) Analysis
 ===============================================================================
 Purpose:
-    - To compare performance or metrics across dimensions or time periods.
+    - To measure the contribution of different categories to the metric.
     - To evaluate differences between categories.
     - Useful for A/B testing or regional comparisons.
 ===============================================================================
@@ -23,6 +23,6 @@ SELECT
     category,
     total_sales,
     SUM(total_sales) OVER () AS overall_sales,
-    ROUND((CAST(total_sales AS FLOAT) / SUM(total_sales) OVER ()) * 100, 2) AS percentage_of_total
+    CONCAT(ROUND((CAST(total_sales AS FLOAT) / SUM(total_sales) OVER ()) * 100, 2), '%') AS percentage_of_total
 FROM category_sales
 ORDER BY total_sales DESC;
