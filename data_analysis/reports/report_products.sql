@@ -6,15 +6,15 @@ Purpose:
     - This report consolidates key product metrics and behaviors.
 
 Highlights:
-    1. Gathers essential fields such as product name, category, subcategory, and cost.
-    2. Segments products by revenue to identify High-Performers, Mid-Range, or Low-Performers.
-    3. Aggregates product-level metrics:
+    1. Collect essential fields such as product name, category, subcategory, and cost.
+    2. Segment products by revenue to identify High-Performers, Mid-Range, or Low-Performers.
+    3. Aggregate product-level metrics:
        - total orders
        - total sales
        - total quantity sold
        - total customers (unique)
        - lifespan (in months)
-    4. Calculates valuable KPIs:
+    4. Calculate valuable KPIs:
        - recency (months since last sale)
        - average order revenue (AOR)
        - average monthly revenue
@@ -32,12 +32,12 @@ CREATE VIEW gold.report_products AS
 
 WITH base_query AS (
 /*---------------------------------------------------------------------------
-1) Base Query: Retrieves core columns from fact_sales and dim_products
+1) Base Query: Retrieve core columns from fact_sales and dim_products
 ---------------------------------------------------------------------------*/
     SELECT
-	    f.order_number,
+	f.order_number,
         f.order_date,
-		f.customer_key,
+	f.customer_key,
         f.sales_amount,
         f.quantity,
         p.product_key,
@@ -53,7 +53,7 @@ WITH base_query AS (
 
 product_aggregations AS (
 /*---------------------------------------------------------------------------
-2) Product Aggregations: Summarizes key metrics at the product level
+2) Product Aggregations: Summarize key metrics at the product level
 ---------------------------------------------------------------------------*/
 SELECT
     product_key,
@@ -79,7 +79,7 @@ GROUP BY
 )
 
 /*---------------------------------------------------------------------------
-  3) Final Query: Combines all product results into one output
+  3) Final Query: Combine all product results into one output
 ---------------------------------------------------------------------------*/
 SELECT 
 	product_key,
