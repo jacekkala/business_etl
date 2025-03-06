@@ -5,12 +5,11 @@ Change Over Time Analysis
 Purpose:
     - To track trends, growth, and changes in key metrics over time.
     - For time-series analysis and identifying seasonality.
-    - To measure growth or decline over specific periods.
+    - To measure growth or decline over specific periods and granularities.
 ===============================================================================
 */
 
--- Analyse sales performance over time
--- Quick Date Functions
+-- Analyze sales performance over time
 SELECT
     YEAR(order_date) AS order_year,
     MONTH(order_date) AS order_month,
@@ -22,7 +21,7 @@ WHERE order_date IS NOT NULL
 GROUP BY YEAR(order_date), MONTH(order_date)
 ORDER BY YEAR(order_date), MONTH(order_date);
 
--- DATETRUNC()
+-- DATETRUNC(): YYYY-MM-01
 SELECT
     DATETRUNC(month, order_date) AS order_date,
     SUM(sales_amount) AS total_sales,
@@ -33,7 +32,7 @@ WHERE order_date IS NOT NULL
 GROUP BY DATETRUNC(month, order_date)
 ORDER BY DATETRUNC(month, order_date);
 
--- FORMAT()
+-- FORMAT(): YYYY-MMM (month abbr)
 SELECT
     FORMAT(order_date, 'yyyy-MMM') AS order_date,
     SUM(sales_amount) AS total_sales,
