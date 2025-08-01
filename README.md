@@ -1,4 +1,4 @@
-# **🗄️SQL Server Data Warehouse & Power BI Analytics 📈**
+# 🗄️**SQL Server Data Warehouse & Power BI Analytics** 📈
 
 ## **📌 Overview**  
 This project demonstrates the design and implementation of a **SQL-based Data Warehouse** with a structured **ETL pipeline**, optimized for sales analytics. The data is processed through **Bronze, Silver, and Gold layers**, ensuring quality and business-ready insights. The final data is analyzed in SQL scripts and visualized in a **Power BI dashboard** for trend analysis and decision-making.  
